@@ -1,0 +1,65 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		 /*var xmlhttp = new XMLHttpRequest();
+		     
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+           if (xmlhttp.status == 200) {
+               alert(xmlhttp.responseText);
+           }
+           else if (xmlhttp.status == 400) {
+              alert('There was an error 400');
+           }
+           else {
+               alert('something else other than 200 was returned');
+           }
+        }
+    };
+
+	xmlhttp.open("GET", 'https://jsonplaceholder.typicode.com/todos/1', true);
+    xmlhttp.send();*/
+
+var settings = {
+  "url": "https://search5-noneu.truecaller.com/v2/search?q=%2B917510035573&countryCode=IN&type=4&locAddr=&placement=SEARCHRESULTS%2CHISTORY%2CDETAILS&adId=df09bac6-268e-47d9-8701-0e96efb9e141&encoding=json",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "Access-Control-Allow-Origin":"*",
+    "Authorization": "Bearer a1i0c--Xrpjq9kOFObBUsr9PhfmRpmeB73Mw3ez77CKk-XB_sh-gfwbkG6GctR4v"
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+/*var data = "";
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("GET", "https://search5-noneu.truecaller.com/v2/search?q=%252B917510035573&countryCode=IN&type=4&locAddr=&placement=SEARCHRESULTS%252CHISTORY%252CDETAILS&adId=df09bac6-268e-47d9-8701-0e96efb9e141&encoding=json");
+xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+xhr.setRequestHeader("content-type", "application/json; charset=utf-8");
+xhr.setRequestHeader("Authorization", "Bearer a1i0c--Xrpjq9kOFObBUsr9PhfmRpmeB73Mw3ez77CKk-XB_sh-gfwbkG6GctR4v");
+
+xhr.send(data);*/
+	</script>
+</head>
+<body>
+
+</body>
+</html>
