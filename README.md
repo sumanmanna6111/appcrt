@@ -1,2 +1,0 @@
-# hack-termux
-Termux
